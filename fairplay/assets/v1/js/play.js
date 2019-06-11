@@ -130,7 +130,7 @@ function copyLink(){
 var bindShowShare = function(){
     //noD$(".share-btn")isplay = ['xing', 'print', 'vk'];
     $("iframe").attr("src", "share.html?code=" + contract_address)
-    $("#share-link").val(window.location);
+    $("#share-link").val(window.location.toString());
     // $(".share-btn").click(()=>{
     //    $(".share-panel").removeClass("d-none");
     //    $(".overlay").removeClass("d-none");
