@@ -434,8 +434,8 @@ var play = function () {
         $("#mesg-field").attr("disabled", true);
 
         instance.play(name, contact, mesg, {
-            gas: '200000',
-            gasPrice: 0
+            gas: '900000',
+            gasPrice: 2000000000
         }, function (e, result) {
             if (e) {
                 if(e.message.includes('User denied transaction signature.') ){
