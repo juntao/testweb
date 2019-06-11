@@ -61,7 +61,7 @@ const lgb = fun.languageChoice();
 window.lgb = lgb;
 // var baseUrl = "https://fairplaydapp.com/"
 console.log(window.location.origin)
-baseUrl = window.location.origin
+// baseUrl = window.location.origin
         // init language
 var initLanguage = function () {
     if (lgb == '' || lgb == null) {
@@ -94,7 +94,8 @@ $(function () {
     initLanguage();
 
     $("#qr-panel").css("display", "none")
-    var link = baseUrl + "/v1/play.html?contract=" + getUrlParameter("code");
+    // var link = baseUrl + "/v1/play.html?contract=" + getUrlParameter("code");
+    var link = window.location.replace("qrcode.html", "play.html");
     
     //generate the short link for the current link
     var reqLink = 'https://cutt.ly/api/api.php?key=03c2a6a042ffdcccd7a27e0782af36f5b0244&short=' + link;

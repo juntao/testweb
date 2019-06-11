@@ -1,7 +1,7 @@
 const fun = new MainFun();
 const tip = IUToast;
 const lgb = fun.languageChoice();
-const baseUrl = window.location.origin;
+// const baseUrl = window.location.origin;
 const webBrowser = new AppLink();
 const contract_address = fun.getParameter("contract");
 var userAddress = '';
@@ -130,7 +130,7 @@ function copyLink(){
 var bindShowShare = function(){
     //noD$(".share-btn")isplay = ['xing', 'print', 'vk'];
     $("iframe").attr("src", "share.html?code=" + contract_address)
-    $("#share-link").val(baseUrl + "/v1/play.html?contract=" + contract_address);
+    $("#share-link").val(window.location);
     // $(".share-btn").click(()=>{
     //    $(".share-panel").removeClass("d-none");
     //    $(".overlay").removeClass("d-none");
