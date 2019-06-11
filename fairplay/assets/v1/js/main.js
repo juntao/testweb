@@ -1,21 +1,32 @@
-if(window.location.href.split("/").indexOf("v1") !== -1 || window.location.href.split("/").indexOf("v2") !== -1){
-    document.write("<script type='text/javascript' src='../assets/js/popper.min.js'></script>");
-    document.write("<script type='text/javascript' src='../assets/js/bootstrap.min.js'></script>");
-    document.write("<script type='text/javascript' src='../assets/js/clipboard.js'></script>");
-    // document.write("<script type='text/javascript' src='../assets/js/popupTip/layer.js'></script>");
-    document.write("<script type='text/javascript' src='../assets/js/popupTip.js'></script>");
-    document.write("<script type='text/javascript' src='../assets/js/browser.js'></script>");
-    document.write("<script type='text/javascript' src='../assets/js/language/en.js'></script>");
-    document.write("<script type='text/javascript' src='../assets/js/language/zh.js'></script>");
-}else{
-    document.write("<script type='text/javascript' src='assets/js/popper.min.js'></script>");
-    document.write("<script type='text/javascript' src='assets/js/bootstrap.min.js'></script>");
-    document.write("<script type='text/javascript' src='assets/js/clipboard.js'></script>");
-    // document.write("<script type='text/javascript' src='assets/js/popupTip/layer.js'></script>");
-    document.write("<script type='text/javascript' src='assets/js/popupTip.js'></script>");
-    document.write("<script type='text/javascript' src='assets/js/browser.js'></script>");
-    document.write("<script type='text/javascript' src='assets/js/language/en.js'></script>");
-    document.write("<script type='text/javascript' src='assets/js/language/zh.js'></script>");
+if(window.location.href.split("/").indexOf("v1") !== -1){ //v1 directory
+    document.write("<script type='text/javascript' src='../assets/v1/js/popper.min.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v1/js/bootstrap.min.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v1/js/clipboard.js'></script>");
+    // document.write("<script type='text/javascript' src='../assets/v1/js/popupTip/layer.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v1/js/popupTip.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v1/js/browser.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v1/js/language/en.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v1/js/language/zh.js'></script>");
+}
+else if(window.location.href.split("/").indexOf("v2") !== -1){ //v2 directory
+   document.write("<script type='text/javascript' src='../assets/v2/js/popper.min.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v2/js/bootstrap.min.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v2/js/clipboard.js'></script>");
+    // document.write("<script type='text/javascript' src='../assets/v1/js/popupTip/layer.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v2/js/popupTip.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v2/js/browser.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v2/js/language/en.js'></script>");
+    document.write("<script type='text/javascript' src='../assets/v2/js/language/zh.js'></script>");
+}
+else{ // top directory
+    document.write("<script type='text/javascript' src='assets/v1/js/popper.min.js'></script>");
+    document.write("<script type='text/javascript' src='assets/v1/js/bootstrap.min.js'></script>");
+    document.write("<script type='text/javascript' src='assets/v1/js/clipboard.js'></script>");
+    // document.write("<script type='text/javascript' src='assets/v1/js/popupTip/layer.js'></script>");
+    document.write("<script type='text/javascript' src='assets/v1/js/popupTip.js'></script>");
+    document.write("<script type='text/javascript' src='assets/v1/js/browser.js'></script>");
+    document.write("<script type='text/javascript' src='assets/v1/js/language/en.js'></script>");
+    document.write("<script type='text/javascript' src='assets/v1/js/language/zh.js'></script>");
 }
 
 

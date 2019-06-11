@@ -36,7 +36,7 @@
 </body>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type='text/javascript' src='../assets/js/qrcode.js'></script>
+    <script type='text/javascript' src='../assets/v1/js/qrcode.js'></script>
 
     <script>
 // baseUrl = window.location.origin
@@ -55,7 +55,7 @@ $.ajaxPrefilter( function (options) {
   }
 });
 $(function () {
-    // var link = baseUrl + "/play.html?contract=" + getUrlParameter("code");
+    // var link = baseUrl + "/v1/play.html?contract=" + getUrlParameter("code");
     var link = window.location;
 
     //first make a qr code of long url
