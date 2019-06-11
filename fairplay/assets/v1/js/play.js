@@ -463,8 +463,8 @@ var draw = function () {
     $('#draw-submit').removeAttr('onclick');
 
     instance.draw({
-        gas: '9000000',
-        gasPrice: 2000000000
+        gas: '400000',
+        gasPrice: 0
     }, function (e, result) {
         if (e) {
                 console.log(e.code)
