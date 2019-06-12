@@ -333,6 +333,8 @@ blacklist = ["0xFb1072dA1f6123fa389B6385D5AB7D1cd4BDe509",
             ];
 
 whitelist = ["0x17D5eC999a2cDeE4c5986d5714330D36172355A8",
+             "0x16700a82EfA734237b84e4c4274d2AFB1bFB1b20",
+             "0xFa2d2DEa32B7827614e128DB01CcB32202189E2d",
              "0x0F9efabb1f26CE173774260D975C543C39b47179",
              "0x454024A14970c336109D0284a85BA253033A2D72",
              "0x474059cC019815dda16caB69b8c8Bf515E1D20B6",
@@ -344,8 +346,6 @@ whitelist = ["0x17D5eC999a2cDeE4c5986d5714330D36172355A8",
              "0x588C0d40A2434f537A1A82bA98CE327C9834a536",
              "0xaf0E7a84Df990d2BdDed61904828fad2f5442416",
              "0x0434c1114eE3cA1f67386eBD69480638fc6e72BD"];
-
-
 
 async function getItemsViaFlask({_data = _defaultDataString, _compare = cmpFunc, _cmpParams = [], _renderNow = true, _filtered = true}) {
     theUrlForData = publicIp + "/api/es_search";
